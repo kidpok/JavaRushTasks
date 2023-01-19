@@ -9,5 +9,16 @@ public class Solution {
 
     public static void main(String[] args) {
         //напишите тут ваш код
+        int x = 0;
+        int y = 0;
+        for (int i = 0; i < coordinates.length; i++) {
+            if (i % 2 == 0) {
+                x = x + coordinates[i];
+            } else {
+                y = y + coordinates[i];
+            }
+        }
+        System.out.println(x);
+        System.out.println(y);
     }
 }
