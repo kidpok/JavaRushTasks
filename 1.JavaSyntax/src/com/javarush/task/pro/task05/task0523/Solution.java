@@ -10,15 +10,14 @@ public class Solution {
     public static void main(String[] args) {
         //напишите тут ваш код
         int x = 0;
-        int y = 0;
-        for (int i = 0; i < coordinates.length; i++) {
-            if (i % 2 == 0) {
-                x = x + coordinates[i];
-            } else {
+        int y = 0 ;
+        for (int i=0; i< coordinates.length ; i ++){
+            if (coordinates[i] % 2 == 0){
                 y = y + coordinates[i];
+            }else {
+                x = x + coordinates[i];
             }
         }
-        System.out.println(x);
-        System.out.println(y);
+        System.out.println("(" + x + ";" + y + ")");
     }
 }
