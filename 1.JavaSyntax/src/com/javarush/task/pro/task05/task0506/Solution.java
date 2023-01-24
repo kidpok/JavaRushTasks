@@ -11,5 +11,20 @@ public class Solution {
 
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        Scanner console = new Scanner(System.in);
+        int number = console.nextInt();
+        array = new int[number];
+
+        for (int i = 0; i < array.length; i++) {
+            array[i] = console.nextInt();
+        }
+
+        int min = array[0];
+        for (int i = 0; i < array.length; i++) {
+            if (array[i]<min){
+                min = array[i];
+            }
+        }
+        System.out.println(min);
     }
 }
