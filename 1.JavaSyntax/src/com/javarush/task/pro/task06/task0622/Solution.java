@@ -22,6 +22,7 @@ public class Solution {
     public static void main(String[] args) {
         diabloPosition = getRandomNumber(4);
         findDiablo();
+        battle();
     }
 
     public static int getRandomNumber(int range) {
@@ -55,5 +56,16 @@ public class Solution {
     }
     public static int diabloDefends(){
         return getRandomNumber(3);
+    }
+    public static void battle(){
+        while (amigoLives > 0 && diabloLives > 0){
+            if (amigoAttacks() == diabloDefends()){
+               amigoLostLife();
+                System.out.println(diabloDefendPhrase);
+            }else {
+                diabloLostLife();
+                System.out.println(amigoAttackPhrase);
+            }
+        }
     }
 }
