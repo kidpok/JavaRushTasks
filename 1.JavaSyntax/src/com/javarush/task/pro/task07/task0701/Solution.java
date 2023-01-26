@@ -14,5 +14,6 @@ public class Solution {
     double db = 1.2;
     float fl = 1.3f;
 
+
     //напишите тут ваш код
 }
