@@ -16,12 +16,18 @@ public class Solution {
     public static String[][] field = new String[height][width];
 
     public static void main(String[] args) {
-        //напишите тут ваш код
+
         for (int i = 0; i < field.length; i++) {
             for (int j = 0; j < field[i].length ; j++) {
                 field[i][j] = empty;
             }
         }
+
+        for (int i = 0; i < field.length; i++) {
+            int x = (int) (Math.random() * width);
+                field[i][x] = robotank;
+            }
+
 
         for (int i = 0; i < field.length; i++) {
             for (int j = 0; j < field[i].length ; j++) {
