@@ -16,11 +16,19 @@ public class BattleField {
         GalavirXIII galavirXIII = new GalavirXIII();
         Nimrod nimrod = new Nimrod();
         do {
-            System.out.println( galavirAttack);
-          int galavirAttack = galavirXIII.attack();
+            System.out.println(galavirAttack);
+            int galavirAttack = galavirXIII.attack();
             nimrod.defend(galavirAttack);
             System.out.println("Nimrod health = " + nimrod.health);
-        } while (isNimrodAlive(nimrod));
+           if (isNimrodAlive(nimrod)){
+               System.out.println(nimrodAttack);
+              int nimrodAttack = nimrod.attack();
+              galavirXIII.defend(nimrodAttack);
+               System.out.println("Galavir health = " + galavirXIII.health);
+           }else {
+               break;
+           }
+        } while (isGalavirAlive(galavirXIII));
 
     }
 
