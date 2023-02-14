@@ -1,8 +1,7 @@
 package com.javarush.task.pro.task11.task1124;
 
 /* 
-MacCoffee 3 в 1
-*/
+
 
 public class Coffee {
     public static class Milk {
@@ -10,5 +9,5 @@ public class Coffee {
     }
 }
 
- class Sugar {
-}
+ class œSugar {
+} */
