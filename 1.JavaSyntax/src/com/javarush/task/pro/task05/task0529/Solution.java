@@ -7,7 +7,6 @@ import java.util.Arrays;
 */
 
 public class Solution {
-
     public static String robotank = "☖";
     public static String empty = "_";
     public static String hit = "🎯";
@@ -15,27 +14,14 @@ public class Solution {
     public static int height = 10;
     public static String[][] field = new String[height][width];
 
-    public static void main(String[] args) {
+      public static void main(String[] args) {
 
-        for (int i = 0; i < field.length; i++) {
-            for (int j = 0; j < field[i].length ; j++) {
+        for (int i = 0; i < field.length ; i++) {
+            for (int j = 0; j < field[i].length; j++) {
                 field[i][j] = empty;
-            }
-        }
-
-        for (int i = 0; i < field.length; i++) {
-            int x = (int) (Math.random() * width);
-                field[i][x] = robotank;
-            }
-
-
-        for (int i = 0; i < field.length; i++) {
-            for (int j = 0; j < field[i].length ; j++) {
                 System.out.print(field[i][j]);
             }
             System.out.println();
         }
-
-
     }
 }
