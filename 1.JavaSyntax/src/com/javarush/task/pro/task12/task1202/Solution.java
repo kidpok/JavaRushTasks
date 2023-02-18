@@ -1,33 +1,29 @@
-package com.javarush.task.pro.task12.task1201;
+package com.javarush.task.pro.task12.task1202;
 
-/*
-Автоупаковка
+/* 
+Распаковка
 */
-/*
+
 public class Solution {
-    byte byteValue;
-    short shortValue;
-    int intValue;
-    long longValue;
+    Byte byteValueBox;
+    Short shortValueBox;
+    Integer integerValueBox;
+    Long longValueBox;
 
-    float floatValue;
-    double doubleValue;
+    Float floatValueBox;
+    Double doubleValueBox;
 
-    char charValue;
-    boolean booleanValue;
+    Character characterValueBox;
+    Boolean booleanValueBox;
 
-    Byte byteValueBox = Byte.valueOf(byteValue);
-    Short shortValueBox = Short.valueOf(shortValue);
-    Integer integerValueBox = Integer.valueOf(intValue);
-    Long longValueBox = Long.valueOf(longValue);
+    byte byteValue = byteValueBox.byteValue();
+    short shortValue = shortValueBox.shortValue();
+    int intValue = integerValueBox.intValue();
+    long longValue = longValueBox.longValue();
 
-    Float floatValueBox = Float.valueOf(floatValue);
-    Double doubleValueBox = Double.valueOf(doubleValue);
+    float floatValue =floatValueBox.floatValue();
+    double doubleValue = doubleValueBox.doubleValue();
 
-    Character characterValueBox = Character.valueOf(charValue);
-    Boolean booleanValueBox = Boolean.valueOf(booleanValue);
-
-    public static void main(String[] args) {
-
-    }
-}*/
+    char charValue = characterValueBox.charValue();
+    boolean booleanValue = booleanValueBox.booleanValue();
+}
