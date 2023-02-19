@@ -24,7 +24,8 @@ public class UniversityGroup {
     public void exclude(String excludedStudent) {
         for (String student : students) {
             if (student.equals(excludedStudent)) {
-                students.remove(student);
+                students.remove(excludedStudent);
+                break;
             }
         }
     }
