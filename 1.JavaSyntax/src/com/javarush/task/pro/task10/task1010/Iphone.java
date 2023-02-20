@@ -17,7 +17,17 @@ public class Iphone {
         this.price = price;
     }
 
-    //напишите тут ваш код
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+
+        Iphone that = (Iphone) object;
+
+        if (model != that.model || color != that.color || price != that.price) return false;
+
+        return Objects.equals(price, that.price);
+    }
 
     public static void main(String[] args) {
         Iphone iphone1 = new Iphone("X", "Black", 999);
