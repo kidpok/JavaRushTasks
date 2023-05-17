@@ -33,11 +33,11 @@ public class Solution {
         }
     }
 
-    public interface CanFly {
+    public static interface CanFly {
         void doAction();
     }
 
-    public interface CanMove {
+    public static interface CanMove {
         void doAnotherAction();
     }
 }
