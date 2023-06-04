@@ -22,13 +22,14 @@ public class Solution {
                     max = id;
                 }
             }
+
             if (args.length != 0) {
 
                 if (args[0].equalsIgnoreCase("-c")) {
-                    String id = "";
-                    String productName = "";
-                    String price = "";
-                    String quantity = "";
+                    String id = checkLength(String.valueOf(++max), 8);
+                    String productName = checkLength(args[1], 30);
+                    String price = checkLength(args[2], 8);
+                    String quantity = checkLength(args[3], 4);
                     writer.newLine();
                     writer.write(id + productName + price + quantity);
                 }
@@ -36,5 +37,18 @@ public class Solution {
 
         }
 
+    }
+
+    private static String checkLength(String str, int limit) {
+        StringBuilder builder = new StringBuilder(str);
+
+        if (str.length() > limit) {
+            return str.substring(0, limit);
+        } else {
+            while (builder.length() != limit) {
+                builder.append(" ");
+            }
+            return builder.toString();
+        }
     }
 }
