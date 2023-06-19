@@ -10,13 +10,12 @@ public class Solution {
     public static String secret = "AmIGo";
 
     public static void main(String[] args) {
-        Scanner console = new Scanner(System.in);
-        String amigo = console.nextLine();
-        secret.equalsIgnoreCase(amigo);
-        if(secret.equalsIgnoreCase(amigo)) {
+        Scanner scanner = new Scanner(System.in);
+        String test = scanner.nextLine();
+        if (test.equalsIgnoreCase(secret)){
             System.out.println("доступ разрешен");
-        }else {
-            System.out.println("доступ запрещен");
-        }
+        }else
+        System.out.println("доступ запрещен");
+
     }
 }
