@@ -4,29 +4,27 @@ package com.javarush.task.pro.task04.task0405;
 Незаполненный прямоугольник
 */
 
-import java.sql.SQLOutput;
-
 public class Solution {
     public static void main(String[] args) {
-        //напишите тут ваш код
-        int i = 0;
-        while (i < 10) {
 
-            int j = 0;
-            while (j < 20) {
-                if (i == 0 || i == 9) {
+        int x = 0;
+        while (x < 10) {
+            int y = 0;
+            while (y < 20) {
+                if (x == 0 || x== 9) {
                     System.out.print("Б");
-                } else if (j == 0 || j == 19) {
+                } else if (x>0 && y==0 ){
                     System.out.print("Б");
-                } else {
+                }else if(x>0 && y==19){
+                    System.out.print("Б");
+                }else {
                     System.out.print(" ");
                 }
-                j++;
+                y++;
             }
             System.out.println();
-            i++;
+            x++;
         }
-
 
     }
 }
