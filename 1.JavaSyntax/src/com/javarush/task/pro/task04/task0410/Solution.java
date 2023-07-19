@@ -8,32 +8,22 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {
-        //напишите тут ваш код
         Scanner console = new Scanner(System.in);
-        int min = console.nextInt();
-        int secondMin = console.nextInt();
 
-        if (secondMin < min){
-            int temp = min;
-            min = secondMin;
-            secondMin = temp;
-        }
-        while (console.hasNextInt()){
-            int number = console.nextInt();
-            if (min == secondMin && number > secondMin){
-                secondMin = number;
-            }else if (number < min){
+        int min = Integer.MAX_VALUE;
+        int secondMin = Integer.MAX_VALUE;
+
+        while (console.hasNextInt()) {
+            int tmp = console.nextInt();
+            if (tmp < min) {
                 secondMin = min;
-                min = number;
-            }else if (min < number && number < secondMin) {
-                secondMin = number;
-
+                min = tmp;
+            } else if (tmp > min && tmp < secondMin) {
+                secondMin = tmp;
             }
 
         }
+
         System.out.println(secondMin);
-
-
-
     }
 }
