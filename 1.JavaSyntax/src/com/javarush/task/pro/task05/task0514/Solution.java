@@ -12,10 +12,7 @@ public class Solution {
     public static int[][] ints = new int[][]{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
 
     public static void main(String[] args) {
-        String str = Arrays.deepToString(strings);
-        String str2 = Arrays.deepToString(ints);
-        System.out.println(str);
-        System.out.println(str2);
-        //напишите тут ваш код
+        System.out.println(Arrays.deepToString(ints));
+        System.out.println(Arrays.deepToString(strings));
     }
 }
