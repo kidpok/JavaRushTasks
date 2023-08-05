@@ -13,16 +13,15 @@ public class Solution {
         int end = scanner.nextInt();
         int multiple = scanner.nextInt();
 
-        int count = 0;
-        for (count = 0; start < end; start++) {
-
-
-            if (start % multiple != 0)
+        int sum = 0;
+        for (int i = start ; i <= end; i++) {
+            if(i % multiple == 0){
+                sum = sum + i;
+            }else {
                 continue;
-            count += start ;
-
+            }
         }
-        System.out.println(count);
+
+        System.out.println(sum);
     }
 }
-
