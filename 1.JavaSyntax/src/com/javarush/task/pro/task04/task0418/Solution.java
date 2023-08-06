@@ -9,17 +9,17 @@ import java.util.Scanner;
 public class Solution {
     public static void main(String[] args) {
         double glass = 0.5;
-        Scanner console = new Scanner(System.in);
-        boolean i = console.nextBoolean();
-        if (i){
-            int a = (int) Math.ceil(glass);
-            System.out.println(a);
-        }else {
-           int b = (int) Math.floor(glass);
-            System.out.println(b);
-        }
-        //напишите тут ваш код
+        Scanner scanner = new Scanner(System.in);
+        boolean bl = scanner.nextBoolean();
 
+        double db ;
+        if (bl) {
+            db =  Math.ceil(glass);
+        } else {
+            db = Math.floor(glass);
+        }
+
+        System.out.println((int) db);
 
     }
 }
