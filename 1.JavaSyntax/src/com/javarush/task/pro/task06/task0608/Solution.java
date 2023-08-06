@@ -7,11 +7,10 @@ package com.javarush.task.pro.task06.task0608;
 public class Solution {
     public static void main(String[] args) {
 
-
-
     }
 
-    public static long cube(long value) {
-        return (long) Math.pow(value, 3);
+    public static long cube(long i){
+        i = (long) Math.pow(i,3);
+        return i;
     }
 }
