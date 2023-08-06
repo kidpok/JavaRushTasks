@@ -11,7 +11,6 @@ public class Solution {
         String lastName = "Киприяновна";
         String favouriteDish = "Пельмени";
         printPersonInfo(firstName, lastName, favouriteDish);
-
     }
     
     public static void printPersonInfo(String name, String surname, String meal){
@@ -19,7 +18,6 @@ public class Solution {
         System.out.println("Имя: " + name);
         System.out.println("Фамилия: " + surname);
         System.out.println("Любимое блюдо: " + meal);
-
     }
     
 }
