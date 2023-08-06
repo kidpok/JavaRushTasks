@@ -10,35 +10,34 @@ public class Solution {
 
     }
 
-    public static void universalMethod(int x){
+    public static void universalMethod(){
 
     }
-    public static void universalMethod(String s){
+
+    public static void universalMethod(String a){
 
     }
-    public static void universalMethod(String s, int a){
+    public static void universalMethod(String a, String b){
 
     }
-    public static void universalMethod(String s, int a, int b){
+    public static void universalMethod(int a){
 
     }
-    public static void universalMethod(String s, int a, int x, int r, int y){
+    public static void universalMethod(int a, int b){
 
     }
-    public static void universalMethod(String s,String e, int a, int x, int r, int y){
+    public static void universalMethod(boolean a){
 
     }
-    public static void universalMethod(String s,String e){
+    public static void universalMethod(char a){
 
     }
-    public static void universalMethod(String s,String e, double a){
+    public static void universalMethod(char a, int b){
+
+    } public static void universalMethod(double a){
 
     }
-    public static void universalMethod(String s, double a){
+    public static void universalMethod(float a){
 
     }
-    public static void universalMethod( double a){
-
-    }
-    //напишите тут ваш код
 }
