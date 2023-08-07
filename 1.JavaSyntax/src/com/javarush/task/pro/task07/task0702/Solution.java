@@ -5,9 +5,8 @@ package com.javarush.task.pro.task07.task0702;
 */
 
 public class Solution {
-    byte a = 127;
-    short b = 32767;
-    int c = 2147483647;
-    long d = 9223372036854775807L;
-    //напишите тут ваш код
+    byte a = Byte.MAX_VALUE;
+    short b = Short.MAX_VALUE;
+    int c = Integer.MAX_VALUE;
+    long d = Long.MAX_VALUE;
 }
