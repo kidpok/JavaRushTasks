@@ -14,8 +14,8 @@ public class Solution {
         String elementSqrt = "Корень квадратный для числа ";
         for (int i = 0; i < array.length; i++) {
             int element = array[i];
-            double elementSqrts = Math.sqrt(element);
-            System.out.println(elementSqrt + element + " равен " + elementSqrts);
+            double elementSqrt1 = Math.sqrt(element);
+            System.out.println(elementSqrt + element + " равен " + elementSqrt1);
         }
     }
 }
