@@ -7,11 +7,9 @@ public class Person {
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-
     }
 
     protected String getFirstName() {
-
         return firstName;
     }
 
@@ -19,8 +17,7 @@ public class Person {
         return lastName;
     }
 
-    protected String getFullName() {
-
+    public String getFullName(){
         return firstName + " " + lastName;
     }
 }
