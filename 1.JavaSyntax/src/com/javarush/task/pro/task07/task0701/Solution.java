@@ -5,15 +5,13 @@ package com.javarush.task.pro.task07.task0701;
 */
 
 public class Solution {
-    int a = 1;
-    byte i = 10;
-    long j = 125;
-    short f = 1234;
-    boolean b = true;
-    char chr = 10;
-    double db = 1.2;
-    float fl = 1.3f;
-
-
-    //напишите тут ваш код
+   String i = "s";
+   int a = 2;
+   boolean b = true;
+   float c = 2.1F;
+   double d = 3.1;
+   long g = 234;
+   short f = 12;
+    byte h = 1;
+    char e = 12;
 }
