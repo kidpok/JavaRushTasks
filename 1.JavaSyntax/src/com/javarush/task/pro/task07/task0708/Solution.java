@@ -15,12 +15,9 @@ public class Solution {
     }
 
     public static void setValues(long value){
-
         a = (byte) value;
         b = (short) value;
         c = (int) value;
         d = value;
-
-        //напишите тут ваш код
     }
 }
