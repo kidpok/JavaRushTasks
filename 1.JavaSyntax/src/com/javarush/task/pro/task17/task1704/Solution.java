@@ -2,9 +2,10 @@ package com.javarush.task.pro.task17.task1704;
 
 import java.util.ArrayList;
 
-/* 
+/*
+/*
 Космическая одиссея ч.2
-*/
+
 
 public class Solution {
     public static ArrayList<Astronaut> astronauts = new ArrayList<>();
@@ -49,3 +50,9 @@ public class Solution {
         }
     }
 }
+
+
+
+
+*/
+
