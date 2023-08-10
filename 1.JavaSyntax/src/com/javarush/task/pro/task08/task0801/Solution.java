@@ -9,18 +9,17 @@ import static java.lang.Math.toRadians;
 public class Solution {
 
     public static double sin(double a) {
-        //напишите тут ваш код
-
-        return (double) Math.sin( Math.toRadians(a) );
+        double v = Math.toRadians(a);
+        return Math.sin(v);
     }
 
     public static double cos(double a) {
-
-        return (double) Math.cos( Math.toRadians(a) );
+        double v = Math.toRadians(a);
+        return Math.cos(v);
     }
 
     public static double tan(double a) {
-
-        return (double) Math.tan( Math.toRadians(a) );
+        double v = Math.toRadians(a);
+        return Math.tan(v);
     }
 }
