@@ -1,10 +1,6 @@
 package com.javarush.task.pro.task08.task0806;
 
 
-
-
-
-
 /* 
 Импорты: Part 1
 */
