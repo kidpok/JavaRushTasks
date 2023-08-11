@@ -11,27 +11,11 @@ public class Solution {
     }
 
     public static void printNumbers() throws InterruptedException {
-        //напишите тут ваш код
-
-        System.out.println(1);
-        Thread.sleep(1, 300_000);;
-        System.out.println(2);
-        Thread.sleep(1, 300_000);;
-        System.out.println(3);
-        Thread.sleep(1, 300_000);;
-        System.out.println(4);
-        Thread.sleep(1, 300_000);;
-        System.out.println(5);
-        Thread.sleep(1, 300_000);;
-        System.out.println(6);
-        Thread.sleep(1, 300_000);;
-        System.out.println(7);
-        Thread.sleep(1, 300_000);;
-        System.out.println(8);
-        Thread.sleep(1, 300_000);;
-        System.out.println(9);
-        Thread.sleep(1, 300_000);;
-        System.out.println(10);
-
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
+            if (i < 10) {
+                Thread.sleep(1, 300_000);
+            }
+        }
     }
 }
