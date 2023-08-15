@@ -14,7 +14,7 @@ public class Solution {
     public static String reverseString(String string) {
         StringBuilder builder = new StringBuilder(string);
         builder.reverse();
-        string = builder.toString();
-        return string;
+        return builder.toString();
+
     }
 }
