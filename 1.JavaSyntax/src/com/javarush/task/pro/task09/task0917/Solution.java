@@ -14,12 +14,11 @@ public class Solution {
     }
 
     public static boolean equal(String first, String second) {
-        String first1 = first.intern();
-        String second1 = second.intern();
-        if (first1 == second1) {
+        String f = first.intern();
+        String s = second.intern();
+        if (f == s) {
             return true;
-        } else {
-            return false;
-        }
+        } else return false;
+
     }
 }
