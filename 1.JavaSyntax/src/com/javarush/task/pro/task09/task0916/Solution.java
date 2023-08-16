@@ -11,7 +11,7 @@ public class Solution {
 
     public static String format(String name, int salary) {
         String phrase = "Меня зовут . Я буду зарабатывать $ в месяц.";
-        String format1 = String.format( "Меня зовут %s. Я буду зарабатывать $%d в месяц." , name, salary);
-        return format1;
+        String format = String.format("Меня зовут %s. Я буду зарабатывать $%d в месяц.", name, salary);
+        return format;
     }
 }
