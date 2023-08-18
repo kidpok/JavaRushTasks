@@ -16,26 +16,22 @@ public class Solution {
     }
 
     public static String checkProtocol(String url) {
-        if (url.startsWith("https")) {
-            return "https";
-        } else if (url.startsWith("http:")) {
-            return "http";
-        } else {
-            return "неизвестный";
-        }
+       if (url.startsWith("http://")) {
+           return "http";
+       }else if (url.startsWith("https://")){
+           return "https";
+        }else return "неизвестный";
     }
 
     public static String checkDomain(String url) {
-        if (url.endsWith("com")) {
-            return "com";
-        } else if (url.endsWith("net")) {
-            return "net";
-        } else if (url.endsWith("org")) {
-            return "org";
-        } else if (url.endsWith("ru")) {
+        if (url.endsWith("ru")){
             return "ru";
-        } else {
-            return "неизвестный";
-        }
+        }else if (url.endsWith("com")){
+            return "com";
+        }else if (url.endsWith("org")){
+            return "org";
+        }else if (url.endsWith("net")){
+            return "net";
+        }else return "неизвестный";
     }
 }
