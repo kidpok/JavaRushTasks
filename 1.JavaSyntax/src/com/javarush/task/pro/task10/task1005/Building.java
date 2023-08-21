@@ -8,7 +8,7 @@ public class Building {
     private String type;
 
     public void initialize(String type){
-        this.type =type;
+        this.type = type;
     }
 
     public static void main(String[] args) {
