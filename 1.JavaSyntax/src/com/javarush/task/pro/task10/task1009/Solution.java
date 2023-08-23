@@ -8,7 +8,7 @@ public class Solution {
 
     public static void main(String[] args) {
         String s1 = new String("JavaRush");
-       s1 = "JavaRush";
+        s1 = "JavaRush";
         String s2 = "JavaRush";
 //        s2 = new String("JavaRush");
         String s3 = "JavaRush";
