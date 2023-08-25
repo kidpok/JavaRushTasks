@@ -11,12 +11,11 @@ public class Hedgehog {
     }
 
     public static void main(String[] args) {
-        Apple apple = new Apple();
         Hedgehog hedgehog = new Hedgehog();
+        Apple apple = new Apple();
         hedgehog.eat(apple);
     }
 
     public static class Apple {
-        
     }
 }
