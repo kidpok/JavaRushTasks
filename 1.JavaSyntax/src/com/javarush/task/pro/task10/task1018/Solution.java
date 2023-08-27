@@ -12,6 +12,5 @@ public class Solution {
         coordinate.setY(25);
         System.out.println(coordinate.getX());
         System.out.println(coordinate.getY());
-
     }
 }
