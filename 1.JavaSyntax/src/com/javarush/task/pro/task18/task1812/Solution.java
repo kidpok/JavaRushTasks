@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 
 /* 
 Рейтинг языков программирования
-*/
+
 
 public class Solution {
 
@@ -35,3 +35,4 @@ public class Solution {
 
     }
 }
+*/
