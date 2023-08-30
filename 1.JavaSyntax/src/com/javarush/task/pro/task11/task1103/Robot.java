@@ -14,7 +14,7 @@ public class Robot {
 
     public  int productionYear;
 
-    public static String vendor = "Javarush Co."; //нельзя трогать
+    public static String vendor = "Javarush Co.";
 
     public Robot(String model, int productionYear) {
         this.model = model;
