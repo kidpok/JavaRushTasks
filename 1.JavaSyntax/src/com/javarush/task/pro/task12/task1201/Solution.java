@@ -16,7 +16,7 @@ public class Solution {
     char charValue;
     boolean booleanValue;
 
-    Byte byteValueBox = Byte.valueOf(byteValue) ;
+    Byte byteValueBox = Byte.valueOf(byteValue);
     Short shortValueBox = Short.valueOf(shortValue);
     Integer integerValueBox = Integer.valueOf(intValue);
     Long longValueBox = Long.valueOf(longValue);
@@ -27,4 +27,7 @@ public class Solution {
     Character characterValueBox = Character.valueOf(charValue);
     Boolean booleanValueBox = Boolean.valueOf(booleanValue);
 
+    public static void main(String[] args) {
+
+    }
 }
