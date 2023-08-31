@@ -16,6 +16,8 @@ public class Solution {
     }
 
     public static void processPayment(String bill) {
-        balance = balance - Integer.valueOf(bill);
+       int i = Integer.parseInt(bill);
+       int answer = balance - i;
+       balance = answer;
     }
 }
