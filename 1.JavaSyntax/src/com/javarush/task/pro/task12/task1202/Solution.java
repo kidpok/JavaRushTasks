@@ -21,9 +21,13 @@ public class Solution {
     int intValue = integerValueBox.intValue();
     long longValue = longValueBox.longValue();
 
-    float floatValue =floatValueBox.floatValue();
+    float floatValue = floatValueBox.floatValue();
     double doubleValue = doubleValueBox.doubleValue();
 
     char charValue = characterValueBox.charValue();
     boolean booleanValue = booleanValueBox.booleanValue();
+
+    public static void main(String[] args) {
+
+    }
 }
