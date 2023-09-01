@@ -15,6 +15,6 @@ public class Solution {
     }
 
     public static void divide(double a, double b) {
-        System.out.println(a / b);
+            System.out.println(a / b);
     }
 }
