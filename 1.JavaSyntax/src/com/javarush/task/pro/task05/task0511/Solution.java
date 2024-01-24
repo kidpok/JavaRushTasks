@@ -10,19 +10,13 @@ public class Solution {
     public static int[][] multiArray;
 
     public static void main(String[] args) {
-        Scanner console = new Scanner(System.in);
-        int number = console.nextInt();
-        multiArray = new int[number][];
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
 
-        for (int i = 0; i <multiArray.length ; i++) {
-            int x = console.nextInt();
-            multiArray[i] = new int[x];
-        }
+        multiArray = new int[number][];
         for (int i = 0; i < multiArray.length; i++) {
-            for (int j = 0; j <multiArray[i].length ; j++) {
-                System.out.print("[]");
-            }
-            System.out.println("");
+            int number2 = scanner.nextInt();
+            multiArray[i] = new int[number2];
         }
     }
 }
