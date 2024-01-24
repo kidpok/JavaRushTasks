@@ -12,14 +12,9 @@ public class Solution {
     public static int element = 5;
 
     public static void main(String[] args) {
-        //напишите тут ваш код
-        int[] arr = Arrays.copyOf(array, array.length);
-        Arrays.sort(arr);
-        int a = Arrays.binarySearch(arr, element);
-        if (a>=0){
-            System.out.println(true);
-        }else {
-            System.out.println(false);
-        }
+        int[] copy = Arrays.copyOf(array, array.length);
+        Arrays.sort(copy);
+        int index = Arrays.binarySearch(copy, element);
+        System.out.println(index >= 0);
     }
 }
