@@ -2,7 +2,7 @@ package com.javarush.task.pro.task09.task0906;
 
 import java.util.regex.Pattern;
 
-/* 
+/*
 Двоичный конвертер
 */
 
@@ -20,22 +20,24 @@ public class Solution {
         }
         String binaryNumber = "";
         while (decimalNumber != 0) {
-            binaryNumber = (decimalNumber % 2) + binaryNumber;
+            binaryNumber = decimalNumber % 2 + binaryNumber;
             decimalNumber = decimalNumber / 2;
         }
+
         return binaryNumber;
     }
 
     public static int toDecimal(String binaryNumber) {
-        if (binaryNumber == null || binaryNumber == ""){
+        if (binaryNumber == null || binaryNumber.equals("")) {
             return 0;
         }
         int decimalNumber = 0;
         for (int i = 0; i < binaryNumber.length(); i++) {
-            char charAt = binaryNumber.charAt(binaryNumber.length() - 1 - i);
-            int number = Character.getNumericValue(charAt);
-            decimalNumber = decimalNumber + number * (int) Math.pow(2, i);
+            char eChar = binaryNumber.charAt(binaryNumber.length() - 1 - i);
+            decimalNumber = decimalNumber + Integer.parseInt(eChar + "") * (int) Math.pow(2, i);
+
         }
+
         return decimalNumber;
     }
 }
