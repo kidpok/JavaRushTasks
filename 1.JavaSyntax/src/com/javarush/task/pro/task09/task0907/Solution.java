@@ -17,7 +17,7 @@ public class Solution {
     }
 
     public static String toHex(int decimalNumber) {
-        if (decimalNumber <= 0) {
+        if (decimalNumber <= 0){
             return "";
         }
         String hexNumber = "";
@@ -29,14 +29,14 @@ public class Solution {
     }
 
     public static int toDecimal(String hexNumber) {
-        if (hexNumber == null || hexNumber.isEmpty()) {
+        if (hexNumber == null || hexNumber.isEmpty()){
             return 0;
         }
         int decimalNumber = 0;
         for (int i = 0; i < hexNumber.length(); i++) {
             decimalNumber = 16 * decimalNumber + HEX.indexOf(hexNumber.charAt(i));
-        }
 
+        }
         return decimalNumber;
     }
 }
