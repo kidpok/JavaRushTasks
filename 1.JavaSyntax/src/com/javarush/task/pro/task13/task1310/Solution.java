@@ -25,19 +25,16 @@ public class Solution {
     }
 
     public static void printStudents() {
-        for (String key : grades.keySet()) {
-            System.out.println(key);
+        for (String students : grades.keySet()) {
+            System.out.println(students);
         }
     }
 
     public static Double getAverageMark() {
-        double sum = 0;
-        for (String key : grades.keySet()) {
-            Double number = grades.get(key);
-            sum = number + sum;
+        double sum = 0.0;
+        for (Double value : grades.values()) {
+            sum = value + sum;
         }
-
-
         return sum / grades.size();
     }
 }
