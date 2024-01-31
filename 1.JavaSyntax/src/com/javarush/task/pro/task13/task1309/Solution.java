@@ -15,11 +15,13 @@ public class Solution {
     }
 
     public static void addStudents() {
-       grades.put("Артем Фролов", 4.0);
-        grades.put("Артемий Фролов", 4.0);
-        grades.put("Артем Иванов", 2.0);
-        grades.put("Алексей Фролов", 3.0);
-        grades.put("Ниджат Фролов", 5.5);
+        grades.put("Student 1" , 4.0);
+        grades.put("Student 2", 5.0);
+        grades.put("Student 3" , 3.0);
+        grades.put("Student 4", 2.0);
+        grades.put("Student 5" , 1.0);
+
+
 
     }
 }
