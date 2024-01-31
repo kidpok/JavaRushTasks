@@ -5,18 +5,20 @@ package com.javarush.task.pro.task11.task1107;
 */
 
 public class Car {
-    Engine engine;
+    Engine engine = new Engine();
+
 
     class Engine {
         private boolean isRunning;
 
         public void start() {
-            this.isRunning = true;
+            isRunning = true;
         }
 
         public void stop() {
-            this.isRunning = false;
+            isRunning = false;
         }
+
     }
 
 }
