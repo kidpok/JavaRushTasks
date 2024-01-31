@@ -1,7 +1,10 @@
 package com.javarush.task.pro.task11.task1118;
 
-import java.util.Scanner;
+/* 
+Импортный код
+*/
 
+import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {
