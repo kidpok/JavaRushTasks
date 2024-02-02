@@ -9,16 +9,15 @@ import java.util.*;
 public class Solution {
 
     public static void printList(ArrayList<String> words) {
-        for (String str : words){
-            System.out.println(str);
+        for (String word : words) {
+            System.out.println(word);
         }
     }
 
     public static void printHashSet(HashSet<String> words) {
-        for (String str : words){
-            System.out.println(str);
+        for (String word : words) {
+            System.out.println(word);
         }
-
     }
 
     public static void main(String[] args) {
