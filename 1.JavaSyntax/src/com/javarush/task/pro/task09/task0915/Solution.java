@@ -15,15 +15,17 @@ public class Solution {
     }
 
     public static String[] getTokens(String query, String delimiter) {
-        StringTokenizer tokenizer = new StringTokenizer(query, delimiter);
-        String[] array = new String[tokenizer.countTokens()];
 
-        int i = 0;
+        StringTokenizer tokenizer = new StringTokenizer(query,delimiter);
+
+        String[] tokens = new String[tokenizer.countTokens()];
+        int index = 0;
+
         while (tokenizer.hasMoreTokens()) {
-            String token = tokenizer.nextToken();
-            array[i] = token;
-            i++;
+            tokens[index++] = tokenizer.nextToken();
         }
-        return array;
+
+        return tokens;
+
     }
 }
