@@ -4,6 +4,8 @@ package com.javarush.task.pro.task11.task1125;
 Составляем список студентов
 */
 
+import java.util.Arrays;
+
 public class University {
     private final String[] students = new String[30];
 
@@ -30,5 +32,7 @@ public class University {
         university.addStudent("Максим Федоренко");
         university.addStudent("Олег Кесарчук");
         university.printStudents();
+
     }
+
 }
