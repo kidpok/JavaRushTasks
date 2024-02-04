@@ -27,6 +27,7 @@ public class Solution {
             , "Юлиан Мумбриков"
             , "Зигфрид Горемыкин");
 
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -38,10 +39,9 @@ public class Solution {
             }
 
             int studentId = Integer.parseInt(input);
-
-            try {
-                System.out.println(ANSWERING + studentsJournal.get(studentId));
-            } catch (Exception e) {
+            try{
+            System.out.println(ANSWERING + studentsJournal.get(studentId));
+            }catch (ArrayIndexOutOfBoundsException e){
                 System.out.println(NOT_EXIST);
             }
         }
