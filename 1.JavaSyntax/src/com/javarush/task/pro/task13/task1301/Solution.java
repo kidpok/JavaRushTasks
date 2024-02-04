@@ -16,16 +16,17 @@ public class Solution {
         System.out.println("___________________________________");
 
         HashSet<String> hashSet = arrayToHashSet(array);
-        for(String s : hashSet) {
+        for (String s : hashSet) {
             System.out.println(s);
         }
     }
 
     public static HashSet<String> arrayToHashSet(String[] strings) {
-        HashSet<String> hashArray = new HashSet<>();
-        for (int i = 0; i < strings.length; i++) {
-            hashArray.add(strings[i]);
+        HashSet<String> strings1 = new HashSet<>();
+
+        for (String e : strings) {
+            strings1.add(e);
         }
-        return hashArray;
+        return strings1;
     }
 }
