@@ -38,18 +38,16 @@ public class Solution {
                 break;
             }
 
-            int studentId;
+            int studentId ;
             try {
                 studentId = Integer.parseInt(input);
+                try {
+                    System.out.println(ANSWERING + studentsJournal.get(studentId));
+                } catch (Exception e) {
+                    System.out.println(NOT_EXIST);
+                }
             } catch (NumberFormatException e) {
                 System.out.println(INTEGER_REQUIRED);
-                continue;
-            }
-
-            try {
-                System.out.println(ANSWERING + studentsJournal.get(studentId));
-            } catch (Exception a) {
-                System.out.println(NOT_EXIST);
             }
 
         }
