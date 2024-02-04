@@ -18,7 +18,6 @@ public class Solution {
         Collections.sort(list);
     }
 
-
     public static void rotate(ArrayList<Integer> list, int distance) {
         Collections.rotate(list, distance);
     }
