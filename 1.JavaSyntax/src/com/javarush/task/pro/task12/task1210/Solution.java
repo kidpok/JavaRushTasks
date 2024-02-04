@@ -1,13 +1,14 @@
 package com.javarush.task.pro.task12.task1210;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
-/* 
+/*
 Переворачивание данных
 */
 
 public class Solution {
-    public static ArrayList<Integer> numbers = new ArrayList<Integer>();
+    public static ArrayList<Integer> numbers = new ArrayList<>();
 
     public static void main(String[] args) {
         init();
@@ -24,19 +25,12 @@ public class Solution {
     }
 
     public static void reverse() {
-        int n = numbers.size() - 1;
-        for (int i = 0; i < numbers.size() / 2; i++) {
-            int temp = numbers.get(i);
-            //  numbers[i] = numbers[n - i];
-            numbers.set(i, numbers.get(n-i));
-            //numbers[n - i] = temp;
-            numbers.set(n-i , temp);
-        }
+        Collections.reverse(numbers);
     }
 
     private static void print() {
         for (int number : numbers) {
             System.out.println(number);
-        }
+       }
     }
 }
