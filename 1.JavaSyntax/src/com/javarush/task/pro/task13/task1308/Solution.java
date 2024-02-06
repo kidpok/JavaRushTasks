@@ -1,6 +1,7 @@
 package com.javarush.task.pro.task13.task1308;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 
 /* 
@@ -10,24 +11,18 @@ import java.util.Collections;
 public class Solution {
 
     public static Integer min(ArrayList<Integer> list) {
-        int min = Collections.min(list);
-        return min;
+        return Collections.min(list);
     }
 
     public static Integer max(ArrayList<Integer> list) {
-        int maximum = Collections.max(list);
-        return maximum;
+        return Collections.max(list);
     }
 
     public static int frequency(ArrayList<Integer> list, Integer element) {
-        int frequency = Collections.frequency(list, element);
-        return frequency;
+       return Collections.frequency(list, element);
     }
 
     public static int binarySearch(ArrayList<Integer> list, Integer key) {
-        Collections.sort(list);
-
-        int index = Collections.binarySearch(list, key);
-        return index;
+       return Collections.binarySearch(list,key);
     }
 }
