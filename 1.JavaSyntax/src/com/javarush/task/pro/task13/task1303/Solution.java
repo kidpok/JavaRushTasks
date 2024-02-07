@@ -11,9 +11,9 @@ import java.util.Iterator;
 public class Solution {
 
     public static void print(HashSet<String> words) {
-        Iterator<String> it = words.iterator();
-        while (it.hasNext()){
-            String str = it.next();
+        Iterator<String> iterator = words.iterator();
+        while (iterator.hasNext()){
+            String str = iterator.next();
             System.out.println(str);
         }
     }
