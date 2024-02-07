@@ -10,11 +10,7 @@ import java.util.Collections;
 public class Solution {
 
     public static void copy(ArrayList<String> destination, ArrayList<String> source) {
-        if (destination.size() < source.size()) {
-            throw new IndexOutOfBoundsException("Source does not fit in dest");
-        } else {
-            Collections.copy(destination, source);
-        }
+        Collections.copy(destination, source);
     }
 
     public static void addAll(ArrayList<String> list, String... strings) {
@@ -25,4 +21,3 @@ public class Solution {
         Collections.replaceAll(list, oldValue, newValue);
     }
 }
-
