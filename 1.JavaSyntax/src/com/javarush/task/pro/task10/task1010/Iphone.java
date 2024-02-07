@@ -18,15 +18,21 @@ public class Iphone {
     }
 
     @Override
-    public boolean equals(Object object) {
-        if (this == object) return true;
-        if (object == null || getClass() != object.getClass()) return false;
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (!(obj instanceof Iphone)) {
+            return false;
+        }
+        Iphone iphone = (Iphone) obj;
 
-        Iphone that = (Iphone) object;
+        return Objects.equals(this.color, iphone.color) && Objects.equals(this.model, iphone.model)
+                && this.price == iphone.price;
 
-        if (model != that.model || color != that.color || price != that.price) return false;
-
-        return Objects.equals(price, that.price);
     }
 
     public static void main(String[] args) {
