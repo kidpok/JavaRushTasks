@@ -2,7 +2,7 @@ package com.javarush.task.pro.task10.task1011;
 
 import java.util.Objects;
 
-/* 
+/*
 Создаем свой hashCode
 */
 
@@ -20,7 +20,8 @@ public class Car {
    }
 
 
-    public static void main(String[] args) {
+
+    public static void main(String[] args)  {
         Car lamborghini = new Car("Lamborghini", 2020);
         Car lamborghini1 = new Car("Lamborghini", 2020);
         Car ferrari = new Car("Ferrari", 2020);
@@ -35,3 +36,5 @@ public class Car {
         System.out.println(lamborghini.hashCode() == ferrari.hashCode());
     }
 }
+
+
