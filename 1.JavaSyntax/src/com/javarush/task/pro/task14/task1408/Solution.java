@@ -2,14 +2,18 @@ package com.javarush.task.pro.task14.task1408;
 
 /* 
 Проглатываем исключение
-
+*/
 
 public class Solution {
 
     public static String errorMessage = "не повезло";
 
     public static void main(String[] args) {
-        generateLuckyNumber();
+        try {
+            generateLuckyNumber();
+        } catch (Exception e) {
+            System.out.println(errorMessage);
+        }
     }
 
     static void generateLuckyNumber() throws Exception {
@@ -20,4 +24,3 @@ public class Solution {
         System.out.println("твое счастливое число: " + luckyNumber);
     }
 }
-*/
