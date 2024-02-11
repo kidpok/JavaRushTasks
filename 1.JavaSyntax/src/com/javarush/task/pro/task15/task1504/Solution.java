@@ -13,25 +13,26 @@ import java.util.Scanner;
 */
 
 public class Solution {
-    public static void main(String[] args) throws IOException {
-        Scanner console = new Scanner(System.in);
-        Path pathOne = Path.of(console.nextLine());
+    public static void main(String[] args) throws Exception {
 
-        try (InputStream inputStream = Files.newInputStream(pathOne);
-             OutputStream outputStream = Files.newOutputStream(Path.of(console.nextLine()))) {
+        Scanner scanner = new Scanner(System.in);
 
-            byte[] bytes = inputStream.readAllBytes();
-            byte[] copyBytes = new byte[bytes.length];
-            for (int i = 0; i < bytes.length; i = i + 2) {
-                if (i < bytes.length - 1) {
-                    copyBytes[i + 1] = bytes[i];
-                    copyBytes[i] = bytes[i + 1];
-                } else {
-                    copyBytes[i] = bytes[i];
-                }
+        try (InputStream input = Files.newInputStream(Path.of(scanner.nextLine()));
+             OutputStream output = Files.newOutputStream(Path.of(scanner.nextLine()))
+        ) {
+            byte[] bytesIn = input.readAllBytes();
+            byte[] bytesOut = new byte[bytesIn.length];
+
+            for (int i = 0; i < bytesIn.length; i = i + 2) {
+                if (i < bytesIn.length - 1) {
+                    bytesOut[i + 1] = bytesIn[i];
+                    bytesOut[i] = bytesIn[i + 1];
+                } else bytesOut[i] = bytesIn[i];
             }
-            outputStream.write(copyBytes);
+            output.write(bytesOut);
         }
+
+
     }
 }
 
