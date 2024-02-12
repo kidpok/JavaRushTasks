@@ -10,9 +10,9 @@ public class Solution {
         System.out.println("В городе " + city.getName() + " сегодня температура воздуха " + city.getTemperature());
     }
 
-    public static void main(String[] args) {
-        City city = new City("Москва" , 12);
-        showWeather(city);
 
+    public static void main(String[] args) {
+        City city = new City("Москва",45);
+        showWeather(city);
     }
 }
