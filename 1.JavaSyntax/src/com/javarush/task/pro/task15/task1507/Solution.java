@@ -12,18 +12,11 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
-        //напишите тут ваш код
-        Scanner console = new Scanner(System.in);
-        String str = console.nextLine();
-       List<String> list = Files.readAllLines(Path.of(str));
-
-        for (int i = 0; i < list.size() ; i++) {
-            if( i % 2 == 0){
-                System.out.println(list.get(i));
-            }
-
+        Scanner scanner = new Scanner(System.in);
+        List<String> strings = Files.readAllLines(Path.of(scanner.nextLine()));
+        for (int i = 0; i < strings.size(); i = i + 2) {
+            System.out.println(strings.get(i));
         }
-
 
     }
 }
