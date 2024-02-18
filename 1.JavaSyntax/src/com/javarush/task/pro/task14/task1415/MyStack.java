@@ -16,9 +16,9 @@ public class MyStack {
     }
 
     public String pop() {
-        String str = storage.get(0);
-        storage.remove(str);
-        return str;
+        String s = storage.get(0);
+        storage.remove(0);
+        return s;
     }
 
     public String peek() {
@@ -31,11 +31,11 @@ public class MyStack {
 
     public int search(String s) {
         for (int i = 0; i < storage.size(); i++) {
-           if(s.equals(storage.get(i))) {
-               return i;
-           }
+
+            if(storage.get(i).equals(s)){
+                return i;
+            }
         }
         return -1;
     }
 }
-
