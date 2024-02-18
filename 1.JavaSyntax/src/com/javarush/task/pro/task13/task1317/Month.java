@@ -1,5 +1,8 @@
 package com.javarush.task.pro.task13.task1317;
 
+/* 
+Трансформируем enum в класс
+*/
 
 public class Month {
     public static final Month JANUARY = new Month(0);
@@ -14,20 +17,20 @@ public class Month {
     public static final Month OCTOBER = new Month(9);
     public static final Month NOVEMBER = new Month(10);
     public static final Month DECEMBER = new Month(11);
-    private final int value;
-    private static final Month[] array = {JANUARY, FEBRUARY, MARCH, APRIL, MAY,
-            JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER};
 
-    private Month(int value) {
-        this.value = value;
+    private int number;
+
+    private Month(int number) {
+        this.number = number;
     }
-
 
     public static Month[] values() {
-     return array;
+        Month[] month = new Month[]{JANUARY,FEBRUARY,MARCH,APRIL,MAY,JUNE,JULY,
+                AUGUST,SEPTEMBER,OCTOBER,NOVEMBER,DECEMBER};
+        return month;
     }
-    public int ordinal(){
-        return this.value ;
+
+    public int ordinal() {
+        return number;
     }
 }
-
