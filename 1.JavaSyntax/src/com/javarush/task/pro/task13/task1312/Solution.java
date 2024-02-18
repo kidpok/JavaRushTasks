@@ -1,5 +1,6 @@
 package com.javarush.task.pro.task13.task1312;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /* 
@@ -14,9 +15,10 @@ public class Solution {
 
     public static HashMap<Integer, String> getProgrammingLanguages() {
         //напишите тут ваш код
-        HashMap <Integer, String> programmingLanguages = new HashMap<>();
-        programmingLanguages.put(0,"Java");
-        programmingLanguages.put(1,"Kotlin");
+
+        HashMap<Integer, String> programmingLanguages = new HashMap<>();
+        programmingLanguages.put(0, "Java");
+        programmingLanguages.put(1, "Kotlin");
         programmingLanguages.put(2, "Go");
         programmingLanguages.put(3, "Javascript");
         programmingLanguages.put(4, "Typescript");
