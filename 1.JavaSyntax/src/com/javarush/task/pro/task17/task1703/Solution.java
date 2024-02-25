@@ -15,13 +15,14 @@ public class Solution {
     }
 
     public static void createCrew(){
-        Human human = new Human();
-        Cat cat = new Cat();
-        Dog dog = new Dog();
-        astronauts.add(human);
-        astronauts.add(human);
-        astronauts.add(dog);
-        astronauts.add(cat);
+       Human human = new Human();
+       Human human1 = new Human();
+       Dog dog = new Dog();
+       Cat cat = new Cat();
+       astronauts.add(human1);
+       astronauts.add(human);
+       astronauts.add(dog);
+       astronauts.add(cat);
     }
 
     public static void printCrewInfo() {
