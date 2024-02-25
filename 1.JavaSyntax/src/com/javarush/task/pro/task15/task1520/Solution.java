@@ -16,10 +16,11 @@ public class Solution {
         Path sourceDirectory = Path.of(scanner.nextLine());
         Path targetDirectory = Path.of(scanner.nextLine());
 
-        DirectoryStream<Path> paths = Files.newDirectoryStream(sourceDirectory);
-        for (Path path : paths) {
-            if (Files.isRegularFile(path)) {
-                Files.move(path, targetDirectory.resolve(path.getFileName()));
+        try (DirectoryStream<Path> paths = Files.newDirectoryStream(sourceDirectory)) {
+            for (Path path : paths) {
+                if (Files.isRegularFile(path)) {
+                    Files.move(path, targetDirectory.resolve(path.getFileName()));
+                }
             }
         }
 
