@@ -2,10 +2,9 @@ package com.javarush.task.pro.task17.task1704;
 
 import java.util.ArrayList;
 
-/*
-/*
+/* 
 Космическая одиссея ч.2
-
+*/
 
 public class Solution {
     public static ArrayList<Astronaut> astronauts = new ArrayList<>();
@@ -17,22 +16,26 @@ public class Solution {
     }
 
     public static void runWorkingProcess() {
-        pilot((Human) astronauts.get(0));
-        pilot((Human) astronauts.get(1));
-        createDirection((Dog) astronauts.get(2));
-        research((Cat) astronauts.get(3));
-
+        for (Astronaut astronaut : astronauts) {
+            if (astronaut instanceof Human) {
+                pilot((Human) astronaut);
+            } else if (astronaut instanceof Dog) {
+                createDirection((Dog) astronaut);
+            } else if (astronaut instanceof Cat) {
+                research((Cat) astronaut);
+            }
+        }
     }
 
-    public static void pilot(Human human){
+    public static void pilot(Human human) {
         System.out.println("Член экипажа " + human.getInfo() + " пилотирует корабль.");
     }
 
-    public static void createDirection(Dog dog){
+    public static void createDirection(Dog dog) {
         System.out.println("Член экипажа " + dog.getInfo() + " занимается созданием навигационного маршрута.");
     }
 
-    public static void research(Cat cat){
+    public static void research(Cat cat) {
         System.out.println("Член экипажа " + cat.getInfo() + " исследует ближайшие планеты.");
     }
 
@@ -50,9 +53,3 @@ public class Solution {
         }
     }
 }
-
-
-
-
-*/
-
