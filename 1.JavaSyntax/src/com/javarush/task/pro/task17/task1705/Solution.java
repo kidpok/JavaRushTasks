@@ -13,19 +13,16 @@ public class Solution {
         createCrew();
         printCrewInfo();
         runWorkingProcess();
-
     }
 
     public static void runWorkingProcess() {
-        for (Astronaut astronaut : astronauts) {
-            if (astronaut instanceof Human) {
+        for (Astronaut astronaut: astronauts) {
+            if( astronaut instanceof Human ){
                 pilot((Human) astronaut);
-            } else if (astronaut instanceof Dog) {
+            }else if(astronaut instanceof Dog){
                 createDirection((Dog) astronaut);
-            } else if (astronaut instanceof Cat) {
+            }else if(astronaut instanceof Cat){
                 research((Cat) astronaut);
-            } else {
-                break;
             }
         }
     }
