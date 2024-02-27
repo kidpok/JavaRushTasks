@@ -13,7 +13,7 @@ public class Car {
     }
 
     public void setModelName(String modelName) {
-        this.modelName = modelName;
+        this.modelName = modelName ;
     }
 
     public int getSpeed() {
