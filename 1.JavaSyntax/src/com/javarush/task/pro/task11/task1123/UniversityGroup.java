@@ -22,10 +22,10 @@ public class UniversityGroup {
     }
 
     public void exclude(String excludedStudent) {
-        for (String student : students) {
-            if (student.equals(excludedStudent)) {
-                students.remove(excludedStudent);
-                break;
+        for (int i = 0; i < students.size(); i++) {
+            String student = students.get(i);
+            if (student.equalsIgnoreCase(excludedStudent)) {
+                students.remove(i);
             }
         }
     }
