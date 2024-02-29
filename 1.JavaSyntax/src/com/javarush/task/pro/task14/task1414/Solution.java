@@ -13,14 +13,12 @@ public class Solution {
     }
 
     public static void printStackTrace(StackTraceElement[] stackTrace) {
-        for (StackTraceElement element : stackTrace) {
-            String methodName = element.getMethodName();
-            int lineNumber = element.getLineNumber();
-            String className = element.getClassName();
-            String fileName = element.getFileName();
-            System.out.printf(OUTPUT_FORMAT, methodName, lineNumber, className, fileName);
+        for (StackTraceElement info: stackTrace) {
+       //     System.out.println("Метод " + info.getMethodName() + " вызван из строки " +
+       //             info.getLineNumber() + " класса " + info.getClassName() +
+        //            " в файле " + info.getFileName());
+            System.out.printf(OUTPUT_FORMAT , info.getMethodName() , info.getLineNumber() , info.getClassName(), info.getFileName());
         }
-
     }
 
     static void makeScrewdriver() {
