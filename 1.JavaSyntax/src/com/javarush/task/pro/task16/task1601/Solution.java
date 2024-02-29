@@ -1,7 +1,9 @@
 package com.javarush.task.pro.task16.task1601;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 /* 
 Лишь бы не в понедельник :)
@@ -9,7 +11,8 @@ import java.util.Date;
 
 public class Solution {
 
-    static Date birthDate = new Date(94,8,16);
+    static Date birthDate = new Date(94, 9, 15);
+    ;
 
     public static void main(String[] args) {
         System.out.println(getDayOfWeek(birthDate));
@@ -20,19 +23,19 @@ public class Solution {
         int day = date.getDay();
         switch (day) {
             case 0:
-                return "Воскресенье";
+                return "воскресенье";
             case 1:
-                return "Понедельник";
+                return "понедельник";
             case 2:
-                return "Вторник";
+                return "вторник";
             case 3:
-                return "Среда";
+                return "среда";
             case 4:
-                return "Четверг";
+                return "четверг";
             case 5:
-                return "Пятница";
+                return "пятница";
             case 6:
-                return "Суббота";
+                return "суббота";
         }
         return result;
     }
