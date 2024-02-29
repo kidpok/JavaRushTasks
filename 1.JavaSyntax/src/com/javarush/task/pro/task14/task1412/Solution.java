@@ -13,10 +13,10 @@ public class Solution {
             System.out.println("до обеда");
         } catch (NullPointerException | NumberFormatException e) {
             System.out.println("Произошло исключение на букву N");
+        } catch (IllegalArgumentException | IllegalStateException | InterruptedException e) {
+            System.out.println("Произошло исключение на букву I");
         } catch (ClassCastException e) {
             System.out.println("Произошло исключение на букву C");
-        } catch ( IllegalStateException | InterruptedException | IllegalArgumentException e) {
-            System.out.println("Произошло исключение на букву I");
         }
     }
 }
