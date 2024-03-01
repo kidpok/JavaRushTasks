@@ -8,9 +8,16 @@ import java.util.Arrays;
 */
 
 public class Solution {
-    public static ArrayList<String> programmingLanguages = new ArrayList<>(Arrays.asList("C", "C++", "Python", "JavaScript", "Ruby", "Java", "Pascal"));
+    public static ArrayList<String> programmingLanguages =
+            new ArrayList<>(Arrays.asList("C", "C++", "Python", "JavaScript", "Ruby", "Java", "Pascal"));
 
     public static void main(String[] args) {
-       programmingLanguages.remove("Pascal");
+        for (int i = 0; i < programmingLanguages.size(); i++) {
+            if (programmingLanguages.get(i).equals("Pascal")){
+                programmingLanguages.remove(i);
+            }
+
+        }
+        System.out.println(programmingLanguages);
     }
 }
