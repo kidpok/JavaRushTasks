@@ -7,5 +7,6 @@ public class Solution {
         for(int i = 0; i < 25; i++) {
             arrayList.add("count" + i);
         }
+
     }
 }

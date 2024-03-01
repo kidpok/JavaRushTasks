@@ -25,14 +25,17 @@ public class CustomStringArrayList {
     }
 
     private void grow() {
-        int newCapacity = capacity + capacity/2;
-        String[] newElements = new String[newCapacity];
+
+        String[] temp = new String[capacity];
         for (int i = 0; i < elements.length; i++) {
-            newElements[i] = elements[i];
+            temp[i] = elements[i];
         }
-        capacity = newCapacity;
-        elements = newElements;
+        capacity = (int) (capacity * 1.5);
+        elements = new String[capacity];
+        for (int i = 0; i < temp.length; i++) {
+            elements[i] = temp[i];
+        }
+
     }
+
 }
-
-
