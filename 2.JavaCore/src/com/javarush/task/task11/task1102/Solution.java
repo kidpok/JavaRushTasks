@@ -12,11 +12,11 @@ public class Solution {
 
     }
 
-    public class Cat extends Pet {
+    public class Cat extends Pet{
 
     }
 
-    public class Dog extends Pet {
+    public class Dog extends Pet{
 
     }
 }
