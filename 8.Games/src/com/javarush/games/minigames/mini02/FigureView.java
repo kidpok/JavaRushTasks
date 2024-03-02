@@ -21,9 +21,8 @@ public class FigureView extends Game {
 
     @Override
     public void initialize() {
-        setScreenSize(5,7);
-        showShip();
-
+       setScreenSize(5,7);
+       showShip();
     }
 
     public void showShip() {
