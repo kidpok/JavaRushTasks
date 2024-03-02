@@ -6,6 +6,7 @@ package com.javarush.task.task11.task1109;
 
 public class Solution {
     public static void main(String[] args) {
+
         Cat cat = new Cat("Vaska", 5);
         Dog dog = new Dog("Sharik", 4);
 
@@ -14,7 +15,7 @@ public class Solution {
     }
 }
 
-class Cat {
+  class Cat {
     private String name;
     private int speed;
 
