@@ -31,6 +31,7 @@ public class Solution {
                 break;
             default:
                 shape = "Другая фигура";
+                break;
         }
         return shape;
     }
