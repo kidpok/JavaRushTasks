@@ -23,31 +23,18 @@ public class CountGame extends Game {
     }
 
     public void showResult() {
+        int sum = 0;
         int count = 0;
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
-
                 if (getCellColor(i, j) == Color.GREEN) {
-                    count = count + 1;
+                    sum = sum + getCellNumber(i, j);
+                    count++;
                 }
             }
         }
-
-        int sum = 0;
-        for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 10; j++) {
-
-                if (getCellNumber(i, j) != 0) {
-                    sum = sum + getCellNumber(i,j);
-                }
-            }
-        }
-
-
         printSum(sum);
         printCountOfGreenCells(count);
-
-
     }
 
     private void printSum(int sum) {
