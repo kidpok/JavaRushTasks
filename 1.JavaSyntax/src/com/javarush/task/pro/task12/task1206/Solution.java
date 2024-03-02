@@ -6,7 +6,8 @@ package com.javarush.task.pro.task12.task1206;
 
 public class Solution {
     public static void main(String[] args) {
-        String string = "Думаю, это будет новой фичей." + "Только не говорите никому, что она возникла случайно.";
+        String string = "Думаю, это будет новой фичей." +
+                "Только не говорите никому, что она возникла случайно.";
 
         System.out.println("Количество цифр в строке : " + countDigits(string));
         System.out.println("Количество букв в строке : " + countLetters(string));
@@ -14,35 +15,37 @@ public class Solution {
     }
 
     public static int countDigits(String string) {
-        char[] array = string.toCharArray();
-        int count = 0;
-        for (int i = 0; i < array.length ; i++) {
-            if ( Character.isDigit(array[i])){
-                count++;
+        char[] charArray = string.toCharArray();
+        int digits = 0;
+        for (int i = 0; i < charArray.length; i++) {
+            if(Character.isDigit(charArray[i])){
+                digits++;
             }
         }
-        return count;
+        return digits;
     }
 
     public static int countLetters(String string) {
-        char[] array = string.toCharArray();
-        int count = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (Character.isLetter(array[i])){
-                count++;
+        char[] charArray = string.toCharArray();
+
+        int digits = 0;
+        for (int i = 0; i < charArray.length; i++) {
+            if(Character.isLetter(charArray[i])){
+                digits = digits + 1;
             }
         }
-        return count;
+        return digits;
     }
 
     public static int countSpaces(String string) {
-        char[] array = string.toCharArray();
-        int count = 0;
-        for (int i = 0; i < array.length ; i++) {
-            if(Character.isSpaceChar(array[i])){
-                count++;
+        char[] charSpace = string.toCharArray();
+
+        int digits = 0;
+        for (int i = 0; i < charSpace.length; i++) {
+            if(Character.isSpace(charSpace[i])){
+                digits = digits + 1;
             }
         }
-        return count;
+        return digits;
     }
 }
