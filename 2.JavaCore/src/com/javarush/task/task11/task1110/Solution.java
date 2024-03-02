@@ -6,13 +6,12 @@ package com.javarush.task.task11.task1110;
 
 public class Solution {
     public static void main(String[] args) {
-
     }
 
     public class Cat {
+        private String name;
         private int age;
         private int weight;
-        private String name;
         private int speed;
 
         public Cat(String name, int age, int weight) {
@@ -20,11 +19,11 @@ public class Solution {
         }
 
         public String getName() {
-            return name;
+            return this.name;
         }
 
         public int getAge() {
-            return age;
+            return this.age;
         }
 
         public void setWeight(int weight) {
