@@ -10,20 +10,19 @@ public class Solution {
 
     public static String getTranslationForDayOfWeek(String ru) {
         String en;
-
-        if (ru.equalsIgnoreCase("понедельник")) {
+        if (ru.toLowerCase().equals("понедельник")) {
             en = "Monday";
-        } else if (ru.equalsIgnoreCase("вторник")) {
+        } else if (ru.toLowerCase().equals("вторник")) {
             en = "Tuesday";
-        } else if (ru.equalsIgnoreCase("среда")) {
+        } else if (ru.toLowerCase().equals("среда")) {
             en = "Wednesday";
-        } else if (ru.equalsIgnoreCase("четверг")) {
+        } else if (ru.toLowerCase().equals("четверг")) {
             en = "Thursday";
-        } else if (ru.equalsIgnoreCase("пятница")) {
+        } else if (ru.toLowerCase().equals("пятница")) {
             en = "Friday";
-        } else if (ru.equalsIgnoreCase("суббота")) {
+        } else if (ru.toLowerCase().equals("суббота")) {
             en = "Saturday";
-        } else if (ru.equalsIgnoreCase("воскресенье")) {
+        } else if (ru.toLowerCase().equals("воскресенье")) {
             en = "Sunday";
         } else {
             en = "Недействительный день недели";
