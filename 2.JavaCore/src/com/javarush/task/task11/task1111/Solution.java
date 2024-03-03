@@ -9,7 +9,7 @@ public class Solution {
     }
 
     //Адам
-    public class Adam  {
+    public class Adam {
 
     }
 
