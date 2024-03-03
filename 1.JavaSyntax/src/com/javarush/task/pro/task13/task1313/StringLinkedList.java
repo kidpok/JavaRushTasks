@@ -20,11 +20,12 @@ public class StringLinkedList {
     public void add(String value) {
         Node node = new Node();
         node.value = value;
-
         Node lastNode = last.prev;
         lastNode.next = node;
         node.prev = lastNode;
         last.prev = node;
+
+
     }
 
     public static class Node {
@@ -32,6 +33,4 @@ public class StringLinkedList {
         private String value;
         private Node next;
     }
-
-
 }
