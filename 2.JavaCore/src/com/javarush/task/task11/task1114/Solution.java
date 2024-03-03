@@ -16,7 +16,7 @@ public class Solution {
 
     }
 
-    public class Dinosaur  extends Lizard{
+    public class Dinosaur extends Lizard{
 
     }
 
