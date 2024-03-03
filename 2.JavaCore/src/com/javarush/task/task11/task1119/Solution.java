@@ -16,7 +16,7 @@ public class Solution {
 
     }
 
-    public class Car  {
+    public class Car {
 
     }
 
