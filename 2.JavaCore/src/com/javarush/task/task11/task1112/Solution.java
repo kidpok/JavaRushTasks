@@ -12,7 +12,7 @@ public class Solution {
 
     }
 
-    public class IPhone extends Apple {
+    public class IPhone extends Apple{
 
     }
 }
