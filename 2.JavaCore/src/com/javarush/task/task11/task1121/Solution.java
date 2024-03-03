@@ -8,7 +8,7 @@ public class Solution {
     public static void main(String[] args) {
     }
 
-    public class Pet  {
+    public class Pet {
 
     }
 
@@ -20,7 +20,7 @@ public class Solution {
 
     }
 
-    public class House  {
+    public class House {
 
     }
 
