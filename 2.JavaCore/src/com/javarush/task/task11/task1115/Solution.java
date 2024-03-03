@@ -20,7 +20,7 @@ public class Solution {
 
     }
 
-    public class Retiree extends Worker {
+    public class Retiree extends Worker{
 
     }
 
