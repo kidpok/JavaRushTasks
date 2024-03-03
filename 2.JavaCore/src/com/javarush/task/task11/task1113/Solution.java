@@ -20,7 +20,7 @@ public class Solution {
 
     }
 
-    public class Human extends Ape {
+    public class Human extends Ape{
 
     }
 
