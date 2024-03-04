@@ -21,7 +21,6 @@ public class Randomizer extends Game {
 
     @Override
     public void onTurn(int step) {
-
-        setCellNumber(1, 1,  getRandomNumber(100));
+        setCellNumber(1, 1, getRandomNumber(100));
     }
 }
