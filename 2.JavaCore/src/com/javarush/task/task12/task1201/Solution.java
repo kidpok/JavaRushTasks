@@ -18,8 +18,9 @@ public class Solution {
     }
 
     public static class Whale extends Cow {
+        @Override
         public String getName() {
-            return "Я не корова, Я - кит.";
+          return "Я не корова, Я - кит.";
         }
     }
 }
