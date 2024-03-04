@@ -14,15 +14,15 @@ public class Solution {
     }
 
     public static void printObjectType(Object o) {
-        if ( o instanceof Cat){
-            System.out.println("Кошка");
-        }else if (o instanceof Bird){
-            System.out.println("Птица");
-        }else if (o instanceof Lamp){
-            System.out.println("Лампа");
-        }else if (o instanceof Dog){
-            System.out.println("Собака");
-        }
+       if (o instanceof Cat){
+           System.out.println("Кошка");
+       }else if(o instanceof Dog){
+           System.out.println("Собака");
+       }else if (o instanceof Bird){
+           System.out.println("Птица");
+       }else if (o instanceof Lamp){
+           System.out.println("Лампа");
+       }
     }
 
     public static class Cat {
