@@ -18,8 +18,5 @@ public class RainbowGame extends Game {
                 setCellColor(x, y, colors[y]);
             }
         }
-
-
-
     }
 }
