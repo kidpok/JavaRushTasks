@@ -10,13 +10,13 @@ public class Solution {
     }
 
     public interface CanFly {
-        static void getName() {
+         static void fly(){
+
+        }
+        static void wing(){
 
         }
 
-        static void getHour() {
-
-        }
     }
 
 }
