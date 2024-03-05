@@ -9,19 +9,18 @@ public class Solution {
 
     }
 
-    public interface CanFly {
-    static void getFly(){
+   public interface CanFly{
+        static void print(){
 
-    }
-
-    }
+        }
+   }
     public interface CanRun{
-        static void getRun(){
+        static void print(){
 
         }
     }
     public interface CanSwim{
-        static void getSwim(){
+        static void print(){
 
         }
     }
