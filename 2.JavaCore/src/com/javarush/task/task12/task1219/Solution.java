@@ -21,52 +21,36 @@ public class Solution {
         public void swim();
     }
 
-
-    public class Human implements CanRun, CanSwim{
-        @Override
+    public class Human implements CanRun, CanSwim {
         public void run() {
-
         }
 
-        @Override
         public void swim() {
-
         }
     }
 
-    public class Duck implements CanSwim, CanRun, CanFly {
-        @Override
+    public class Duck implements CanSwim, CanFly, CanRun {
         public void swim() {
-
         }
 
-        @Override
-        public void run() {
-
-        }
-
-        @Override
         public void fly() {
-
         }
-    }
 
-    public class Penguin implements CanSwim,CanRun{
-        @Override
         public void run() {
-
-        }
-
-        @Override
-        public void swim() {
-
         }
     }
 
-    public class Airplane implements CanFly{
-        @Override
-        public void fly() {
+    public class Penguin implements CanRun, CanSwim {
+        public void run() {
+        }
 
+        public void swim() {
+        }
+    }
+
+    public class Airplane implements CanFly {
+
+        public void fly() {
         }
     }
 }
