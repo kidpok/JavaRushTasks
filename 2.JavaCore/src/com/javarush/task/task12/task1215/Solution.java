@@ -29,12 +29,12 @@ public class Solution {
 
     public static class Dog extends Pet{
         @Override
-        public Pet getChild() {
+        public String getName() {
             return null;
         }
 
         @Override
-        public String getName() {
+        public Pet getChild() {
             return null;
         }
     }
