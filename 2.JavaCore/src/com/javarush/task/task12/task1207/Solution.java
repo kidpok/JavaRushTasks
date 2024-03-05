@@ -6,18 +6,16 @@ Int и Integer
 
 public class Solution {
     public static void main(String[] args) {
-        Integer value = 4;
-        print(3);
-        print(value);
+        Integer intr = 23;
+        print(2);
+        print(intr);
     }
 
-    public static void print(int i){
-        System.out.println(i);
-    }
-    public static void print( Integer a){
-        System.out.println(a);
+    public static void print(int i) {
+
     }
 
+    public static void print(Integer i) {
 
-
+    }
 }
