@@ -9,19 +9,18 @@ public class Solution {
 
     }
 
+
+    //add public interfaces and a public class here - добавь public интерфейсы и public класс тут
+
     public abstract class Human implements CanRun, CanSwim {
 
     }
 
     public interface CanRun {
-        static void getRun() {
-
-        }
+        void print();
     }
 
     public interface CanSwim {
-        static void getSwim() {
-
-        }
+        void swim();
     }
 }
