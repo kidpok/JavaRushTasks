@@ -9,11 +9,10 @@ public class Solution {
 
     }
 
-    public static int print(int i){
+    public static void print(int i){
 
-        return i;
     }
-    public static String print(String str){
-        return str;
+    public static void print(String str){
+
     }
 }
