@@ -9,21 +9,20 @@ public class Solution {
 
     }
 
-    public static int min(int i, int a) {
-        if (i < a) {
-            return i;
-        } else return a;
+    public static int min(int a, int b) {
+        if (a < b) {
+            return a;
+        } else return b;
+    }
+    public static long min(long a, long b) {
+        if (a < b) {
+            return a;
+        } else return b;
+    }
+    public static double min(double a, double b) {
+        if (a < b) {
+            return a;
+        } else return b;
     }
 
-    public static long min(long i, long a) {
-        if (i < a ){
-            return i;
-        }else return a;
-    }
-
-    public static double min(double i, double a) {
-       if(i< a) {
-           return i;
-       }else return a;
-    }
 }
