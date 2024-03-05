@@ -9,19 +9,18 @@ public class Solution {
 
     }
 
-   public static void print(int i){
+    public static void print(int a) {
+    }
 
-   }
-   public static void print(String a){
+    public static void print(double a) {
+    }
 
-   }
-   public static void print(String i, boolean a){
+    public static void print(long a) {
+    }
 
-   }
-   public static void print(int z, String a){
+    public static void print(float a) {
+    }
 
-   }
-   public static void print(int a, String g, boolean i){
-
-   }
+    public static void print(Integer a) {
+    }
 }
