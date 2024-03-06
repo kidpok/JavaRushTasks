@@ -12,12 +12,12 @@ public class Solution {
         System.out.println(x);
     }
 
-    public static int transformValue(int i) {
-        return i + i;
-    }
 
-    public static int transformValue(Integer o) {
-        return  o * 2;
+    public static int transformValue(Integer i) {
+        return ( int) i + i;
+    }
+    public static int transformValue(int i) {
+        return i * i;
     }
 
 
