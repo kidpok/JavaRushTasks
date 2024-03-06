@@ -10,35 +10,47 @@ public class Solution {
 
     }
 
-    public class Cat implements CanClimb, CanRun {
+    public class Cat implements CanRun, CanClimb{
+        @Override
+        public void climb() {
+
+        }
+
+        @Override
+        public void run() {
+
+        }
     }
 
-    public class Dog implements CanRun {
+    public class Dog implements CanRun{
+        @Override
+        public void run() {
 
+        }
     }
 
     public class Tiger extends Cat {
     }
 
-    public class Duck implements CanRun, CanFly {
-    }
+    public class Duck implements CanFly,CanRun{
+        @Override
+        public void fly() {
 
-    public interface CanFly {
-        static void fly() {
+        }
+
+        @Override
+        public void run() {
 
         }
     }
 
-    public interface CanClimb {
-       static void climb() {
-
-        }
+    public interface CanFly{
+        void fly();
     }
-
-    public interface CanRun {
-       static   void run() {
-
-        }
+    public interface CanClimb{
+        void climb();
     }
-
+    public interface CanRun{
+        void run();
+    }
 }
