@@ -28,15 +28,15 @@ public class StringLinkedList {
         Node node = first.next;
         int count = 0;
         while (node != null) {
-            if (count == index) {
+            if (count == index){
                 return node.value;
             }
             node = node.next;
             count++;
         }
-        return null;
-
+            return null;
     }
+
 
     public static class Node {
         private Node prev;
