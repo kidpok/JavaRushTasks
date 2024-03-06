@@ -10,50 +10,38 @@ public class Solution {
     }
 
     public interface CanFly {
-        public void fly();
+        void fly();
     }
 
     public interface CanRun {
-        public void run();
+        void run();
     }
 
     public interface CanSwim {
-        public void swim();
+        void swim();
     }
 
-    public class Duck implements CanFly, CanRun, CanSwim{
-        @Override
-        public void run() {
-
-        }
-
-        @Override
+    public class Duck implements CanSwim, CanRun, CanFly {
         public void fly() {
-
         }
 
-        @Override
         public void swim() {
-
         }
-    }
 
-    public class Penguin implements CanRun, CanSwim{
-        @Override
         public void run() {
-
-        }
-
-        @Override
-        public void swim() {
-
         }
     }
 
-    public class Toad implements CanSwim{
-        @Override
+    public class Penguin implements CanSwim, CanRun {
         public void swim() {
+        }
 
+        public void run() {
+        }
+    }
+
+    public class Toad implements CanSwim {
+        public void swim() {
         }
     }
 }
